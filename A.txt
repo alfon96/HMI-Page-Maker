@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V16" />
+  <DocumentInfo>
+    <Created>2021-06-29T09:40:51.540039Z</Created>
+    <ExportSetting>WithDefaults, WithReadOnly</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V16 Update 3</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V16 Update 2</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V16 Update 3</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V16 Update 3</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SIMATIC Energy Suite</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Advanced</DisplayName>
+        <DisplayVersion>V16 Update 3</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <Hmi.Screen.Screen ID="0">
+    <AttributeList>
+      <ActiveLayer>0</ActiveLayer>
+      <BackColor>182, 182, 182</BackColor>
+      <GridColor>0, 0, 0</GridColor>
+      <Height>768</Height>
+      <Name>interruttore</Name>
+      <Number>2</Number>
+      <Visible>true</Visible>
+      <Width>1366</Width>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="HelpText">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>it-IT</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <Hmi.Screen.ScreenLayer ID="3" CompositionName="Layers">
+        <AttributeList>
+          <Index>0</Index>
+          <Name />
+          <VisibleES>true</VisibleES>
+        </AttributeList>
+        <ObjectList>
+          <Hmi.Screen.Group ID="4" CompositionName="ScreenItems">
+            <AttributeList>
+              <ObjectName>Group</ObjectName>
+              <TabIndex>-1</TabIndex>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Screen.Rectangle ID="5" CompositionName="ScreenItems">
+                <AttributeList>
+                  <BackColor>217, 217, 217</BackColor>
+                  <BackFillStyle>Solid</BackFillStyle>
+                  <BorderColor>24, 28, 49</BorderColor>
+                  <BorderWidth>1</BorderWidth>
+                  <EdgeStyle>Solid</EdgeStyle>
+                  <Flashing>None</Flashing>
+                  <Height>117</Height>
+                  <Left>44</Left>
+                  <ObjectName>Rettangolo_1</ObjectName>
+                  <RoundCornerHeight>0</RoundCornerHeight>
+                  <RoundCornerWidth>0</RoundCornerWidth>
+                  <TabIndex>-1</TabIndex>
+                  <Top>30</Top>
+                  <UseDesignColorSchema>false</UseDesignColorSchema>
+                  <Width>138</Width>
+                </AttributeList>
+              </Hmi.Screen.Rectangle>
+              <Hmi.Screen.Circle ID="6" CompositionName="ScreenItems">
+                <AttributeList>
+                  <BackColor>217, 217, 217</BackColor>
+                  <BackFillStyle>Solid</BackFillStyle>
+                  <BorderColor>24, 28, 49</BorderColor>
+                  <BorderWidth>1</BorderWidth>
+                  <EdgeStyle>Solid</EdgeStyle>
+                  <Flashing>None</Flashing>
+                  <Height>34</Height>
+                  <Left>58</Left>
+                  <ObjectName>Cerchio_1</ObjectName>
+                  <Radius>17</Radius>
+                  <TabIndex>-1</TabIndex>
+                  <Top>60</Top>
+                  <UseDesignColorSchema>false</UseDesignColorSchema>
+                  <Width>34</Width>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Dynamic.RangeAppearanceAnimation ID="7" CompositionName="Animations">
+                    <AttributeList>
+                      <Name>RangeAppearanceAnimation</Name>
+                    </AttributeList>
+                    <ObjectList>
+                      <Hmi.Dynamic.TagElementTrigger ID="8" CompositionName="RangeTag">
+                        <LinkList>
+                          <Tag TargetID="@OpenLink">
+                            <Name>BSA01_STATO</Name>
+                          </Tag>
+                        </LinkList>
+                      </Hmi.Dynamic.TagElementTrigger>
+                      <Hmi.Dynamic.Range ID="B" CompositionName="RangeValues">
+                        <AttributeList>
+                          <BackColor>255, 0, 0</BackColor>
+                          <FlashingType>No</FlashingType>
+                          <ForeColor>24, 28, 49</ForeColor>
+                          <LowerLimit>0</LowerLimit>
+                          <UpperLimit>0</UpperLimit>
+                        </AttributeList>
+                      </Hmi.Dynamic.Range>
+                      <Hmi.Dynamic.Range ID="C" CompositionName="RangeValues">
+                        <AttributeList>
+                          <BackColor>0, 255, 0</BackColor>
+                          <FlashingType>No</FlashingType>
+                          <ForeColor>24, 28, 49</ForeColor>
+                          <LowerLimit>1</LowerLimit>
+                          <UpperLimit>1</UpperLimit>
+                        </AttributeList>
+                      </Hmi.Dynamic.Range>
+                    </ObjectList>
+                  </Hmi.Dynamic.RangeAppearanceAnimation>
+                </ObjectList>
+              </Hmi.Screen.Circle>
+              <Hmi.Screen.TextField ID="D" CompositionName="ScreenItems">
+                <AttributeList>
+                  <BackColor>255, 255, 255</BackColor>
+                  <BackFillStyle>Transparent</BackFillStyle>
+                  <BorderBackColor>101, 103, 115</BorderBackColor>
+                  <BorderColor>71, 73, 87</BorderColor>
+                  <BorderWidth>0</BorderWidth>
+                  <BottomMargin>2</BottomMargin>
+                  <CornerRadius>3</CornerRadius>
+                  <EdgeStyle>Double</EdgeStyle>
+                  <FitToLargest>true</FitToLargest>
+                  <Flashing>None</Flashing>
+                  <ForeColor>49, 52, 74</ForeColor>
+                  <Height>25</Height>
+                  <HorizontalAlignment>Left</HorizontalAlignment>
+                  <Left>58</Left>
+                  <LeftMargin>3</LeftMargin>
+                  <ObjectName>Casella di testo_1</ObjectName>
+                  <RightMargin>2</RightMargin>
+                  <TabIndex>-1</TabIndex>
+                  <TextOrientation>Horizontal</TextOrientation>
+                  <Top>30</Top>
+                  <TopMargin>2</TopMargin>
+                  <UseDesignColorSchema>false</UseDesignColorSchema>
+                  <VerticalAlignment>Middle</VerticalAlignment>
+                  <Width>60</Width>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Globalization.MultiLingualFont ID="E" CompositionName="Font">
+                    <ObjectList>
+                      <Hmi.Globalization.FontItem ID="F" CompositionName="Items">
+                        <AttributeList>
+                          <Culture>it-IT</Culture>
+                          <FontFamily>Tahoma</FontFamily>
+                          <FontSize>17</FontSize>
+                          <FontStyle>Bold</FontStyle>
+                        </AttributeList>
+                      </Hmi.Globalization.FontItem>
+                    </ObjectList>
+                  </Hmi.Globalization.MultiLingualFont>
+                  <MultilingualText ID="10" CompositionName="Text">
+                    <ObjectList>
+                      <MultilingualTextItem ID="11" CompositionName="Items">
+                        <AttributeList>
+                          <Culture>it-IT</Culture>
+                          <Text><body><p>Titolo</p></body></Text>
+                        </AttributeList>
+                      </MultilingualTextItem>
+                    </ObjectList>
+                  </MultilingualText>
+                </ObjectList>
+              </Hmi.Screen.TextField>
+              <Hmi.Screen.TextField ID="12" CompositionName="ScreenItems">
+                <AttributeList>
+                  <BackColor>255, 255, 255</BackColor>
+                  <BackFillStyle>Transparent</BackFillStyle>
+                  <BorderBackColor>101, 103, 115</BorderBackColor>
+                  <BorderColor>71, 73, 87</BorderColor>
+                  <BorderWidth>0</BorderWidth>
+                  <BottomMargin>2</BottomMargin>
+                  <CornerRadius>3</CornerRadius>
+                  <EdgeStyle>Double</EdgeStyle>
+                  <FitToLargest>true</FitToLargest>
+                  <Flashing>None</Flashing>
+                  <ForeColor>49, 52, 74</ForeColor>
+                  <Height>25</Height>
+                  <HorizontalAlignment>Left</HorizontalAlignment>
+                  <Left>98</Left>
+                  <LeftMargin>3</LeftMargin>
+                  <ObjectName>Casella di testo_2</ObjectName>
+                  <RightMargin>2</RightMargin>
+                  <TabIndex>-1</TabIndex>
+                  <TextOrientation>Horizontal</TextOrientation>
+                  <Top>63</Top>
+                  <TopMargin>2</TopMargin>
+                  <UseDesignColorSchema>false</UseDesignColorSchema>
+                  <VerticalAlignment>Middle</VerticalAlignment>
+                  <Width>56</Width>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Globalization.MultiLingualFont ID="13" CompositionName="Font">
+                    <ObjectList>
+                      <Hmi.Globalization.FontItem ID="14" CompositionName="Items">
+                        <AttributeList>
+                          <Culture>it-IT</Culture>
+                          <FontFamily>Tahoma</FontFamily>
+                          <FontSize>17</FontSize>
+                          <FontStyle>Bold</FontStyle>
+                        </AttributeList>
+                      </Hmi.Globalization.FontItem>
+                    </ObjectList>
+                  </Hmi.Globalization.MultiLingualFont>
+                  <MultilingualText ID="15" CompositionName="Text">
+                    <ObjectList>
+                      <MultilingualTextItem ID="16" CompositionName="Items">
+                        <AttributeList>
+                          <Culture>it-IT</Culture>
+                          <Text><body><p>Stato</p></body></Text>
+                        </AttributeList>
+                      </MultilingualTextItem>
+                    </ObjectList>
+                  </MultilingualText>
+                </ObjectList>
+              </Hmi.Screen.TextField>
+              <Hmi.Screen.TextField ID="17" CompositionName="ScreenItems">
+                <AttributeList>
+                  <BackColor>255, 255, 255</BackColor>
+                  <BackFillStyle>Transparent</BackFillStyle>
+                  <BorderBackColor>101, 103, 115</BorderBackColor>
+                  <BorderColor>71, 73, 87</BorderColor>
+                  <BorderWidth>0</BorderWidth>
+                  <BottomMargin>2</BottomMargin>
+                  <CornerRadius>3</CornerRadius>
+                  <EdgeStyle>Double</EdgeStyle>
+                  <FitToLargest>true</FitToLargest>
+                  <Flashing>None</Flashing>
+                  <ForeColor>49, 52, 74</ForeColor>
+                  <Height>25</Height>
+                  <HorizontalAlignment>Left</HorizontalAlignment>
+                  <Left>98</Left>
+                  <LeftMargin>3</LeftMargin>
+                  <ObjectName>Casella di testo_3</ObjectName>
+                  <RightMargin>2</RightMargin>
+                  <TabIndex>-1</TabIndex>
+                  <TextOrientation>Horizontal</TextOrientation>
+                  <Top>109</Top>
+                  <TopMargin>2</TopMargin>
+                  <UseDesignColorSchema>false</UseDesignColorSchema>
+                  <VerticalAlignment>Middle</VerticalAlignment>
+                  <Width>80</Width>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Globalization.MultiLingualFont ID="18" CompositionName="Font">
+                    <ObjectList>
+                      <Hmi.Globalization.FontItem ID="19" CompositionName="Items">
+                        <AttributeList>
+                          <Culture>it-IT</Culture>
+                          <FontFamily>Tahoma</FontFamily>
+                          <FontSize>17</FontSize>
+                          <FontStyle>Bold</FontStyle>
+                        </AttributeList>
+                      </Hmi.Globalization.FontItem>
+                    </ObjectList>
+                  </Hmi.Globalization.MultiLingualFont>
+                  <MultilingualText ID="1A" CompositionName="Text">
+                    <ObjectList>
+                      <MultilingualTextItem ID="1B" CompositionName="Items">
+                        <AttributeList>
+                          <Culture>it-IT</Culture>
+                          <Text><body><p>Termico</p></body></Text>
+                        </AttributeList>
+                      </MultilingualTextItem>
+                    </ObjectList>
+                  </MultilingualText>
+                </ObjectList>
+              </Hmi.Screen.TextField>
+              <Hmi.Screen.Circle ID="1C" CompositionName="ScreenItems">
+                <AttributeList>
+                  <BackColor>217, 217, 217</BackColor>
+                  <BackFillStyle>Solid</BackFillStyle>
+                  <BorderColor>24, 28, 49</BorderColor>
+                  <BorderWidth>1</BorderWidth>
+                  <EdgeStyle>Solid</EdgeStyle>
+                  <Flashing>None</Flashing>
+                  <Height>34</Height>
+                  <Left>58</Left>
+                  <ObjectName>Cerchio_2</ObjectName>
+                  <Radius>17</Radius>
+                  <TabIndex>-1</TabIndex>
+                  <Top>102</Top>
+                  <UseDesignColorSchema>false</UseDesignColorSchema>
+                  <Width>34</Width>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Dynamic.RangeAppearanceAnimation ID="1D" CompositionName="Animations">
+                    <AttributeList>
+                      <Name>RangeAppearanceAnimation</Name>
+                    </AttributeList>
+                    <ObjectList>
+                      <Hmi.Dynamic.TagElementTrigger ID="1E" CompositionName="RangeTag">
+                        <LinkList>
+                          <Tag TargetID="@OpenLink">
+                            <Name>BSA01_TERMICO</Name>
+                          </Tag>
+                        </LinkList>
+                      </Hmi.Dynamic.TagElementTrigger>
+                      <Hmi.Dynamic.Range ID="21" CompositionName="RangeValues">
+                        <AttributeList>
+                          <BackColor>255, 0, 0</BackColor>
+                          <FlashingType>No</FlashingType>
+                          <ForeColor>24, 28, 49</ForeColor>
+                          <LowerLimit>0</LowerLimit>
+                          <UpperLimit>0</UpperLimit>
+                        </AttributeList>
+                      </Hmi.Dynamic.Range>
+                      <Hmi.Dynamic.Range ID="22" CompositionName="RangeValues">
+                        <AttributeList>
+                          <BackColor>0, 255, 0</BackColor>
+                          <FlashingType>No</FlashingType>
+                          <ForeColor>24, 28, 49</ForeColor>
+                          <LowerLimit>1</LowerLimit>
+                          <UpperLimit>1</UpperLimit>
+                        </AttributeList>
+                      </Hmi.Dynamic.Range>
+                    </ObjectList>
+                  </Hmi.Dynamic.RangeAppearanceAnimation>
+                </ObjectList>
+              </Hmi.Screen.Circle>
+            </ObjectList>
+          </Hmi.Screen.Group>
+        </ObjectList>
+      </Hmi.Screen.ScreenLayer>
+    </ObjectList>
+  </Hmi.Screen.Screen>
+</Document>
